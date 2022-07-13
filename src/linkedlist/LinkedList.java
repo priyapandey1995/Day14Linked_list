@@ -15,7 +15,10 @@ public class LinkedList {
 			//node is created
 			Node node = new Node(data);
 			
-			//checking if the head is null if it is null we dont have any nodes in the list
+			/*
+			 * checking if the head is null if it 
+			 * is null we dont have any nodes in the list
+			 */
 			if(head == null) {
 				head = node;
 				tail = node;
@@ -53,6 +56,19 @@ public class LinkedList {
 				node.next = head;
 				head = node;
 			}
+		}
+		
+		public void toAddNodeAtFirst(int data) {
+			/*
+			 * method to add the node at the first
+			 */
+			Node node = new Node(data);
+			if(head == null) {
+				head = node;
+				tail =node;
+			}else
+				node.next = head;
+				head = node;
 		}
 	}
 
