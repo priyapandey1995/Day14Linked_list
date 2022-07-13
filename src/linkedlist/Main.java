@@ -10,9 +10,9 @@ public class Main {
 		 	*/
 		toStart();
 		LinkedList list = new LinkedList();
-		list.add(56);
-		list.add(30);
-		list.add(70);
+		list.toPush(70);
+		list.toPush(30);
+		list.toPush(56);
 		list.show();
 		
 	}
